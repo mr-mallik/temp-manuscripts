@@ -1,0 +1,21 @@
+# Normalise line endings for text files
+* text=auto eol=lf
+
+*.tex   text diff=tex
+*.bib   text
+*.cls   text
+*.sty   text
+*.bst   text
+*.md    text
+*.py    text diff=python
+
+# Binary assets
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.eps   binary
+*.tif   binary
+*.tiff  binary
+*.docx  binary
+*.xlsx  binary

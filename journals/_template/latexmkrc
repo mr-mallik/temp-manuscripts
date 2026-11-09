@@ -1,0 +1,6 @@
+# latexmk settings for this manuscript.
+# Usage (from this folder):  latexmk        -> main.pdf
+#                            latexmk -c     -> remove auxiliary files
+$pdf_mode = 1;            # pdflatex -> PDF
+$bibtex_use = 2;          # run bibtex when needed; -c also removes .bbl
+@default_files = ('main.tex');

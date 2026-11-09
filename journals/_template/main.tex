@@ -1,0 +1,52 @@
+% =====================================================================
+%  Manuscript starter
+%  Copy this folder to journals/<journal-or-paper-name>/ and edit.
+%  If the journal provides its own class (elsarticle, IEEEtran, svjour3,
+%  etc.), replace \documentclass below and drop its .cls/.bst files here.
+% =====================================================================
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+% Look for figures in this manuscript first, then in shared/
+\graphicspath{{figures/}{../../shared/figures/}}
+
+% Reviewer/author notes (remove before submission)
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+
+% ---------- Metadata ----------
+\title{Manuscript Title}
+\author{%
+  First Author\thanks{Affiliation, \texttt{email@example.com}} \and
+  Second Author\thanks{Affiliation}%
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\todo{Write abstract (typically 150--250 words).}
+\end{abstract}
+
+\noindent\textbf{Keywords:} keyword one; keyword two; keyword three
+
+\input{sections/introduction}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\bibliographystyle{unsrtnat}
+\bibliography{../../shared/references/references}
+
+\end{document}

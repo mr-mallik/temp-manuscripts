@@ -1,12 +1,79 @@
+# ---------------------------------------------------------------
 # LaTeX build artefacts
+# ---------------------------------------------------------------
 *.aux
 *.log
 *.out
 *.gz
 *.synctex.gz
+*.synctex(busy)
 *.fls
 *.fdb_latexmk
 *.toc
+*.lof
+*.lot
 *.bbl
 *.blg
+*.bcf
+*.run.xml
 *.spl
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.ist
+*.thm
+*.loa
+*.lol
+*-blx.bib
+*.figlist
+*.makefile
+*.auxlock
+*.pdfsync
+_minted*/
+*.pyg
+build/
+out/
+
+# Compiled PDFs are build output. To commit a submitted/accepted
+# version, force-add it:  git add -f journals/<name>/submitted.pdf
+*.pdf
+# ...but keep PDF figures and supplementary material
+!shared/figures/**/*.pdf
+!journals/**/figures/**/*.pdf
+!journals/**/supplementary/**/*.pdf
+
+# ---------------------------------------------------------------
+# Python / notebooks (shared/evaluation)
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# Editors & OS
+# ---------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*~
+*.bak
+*.sav
+.DS_Store
+Thumbs.db
+desktop.ini
