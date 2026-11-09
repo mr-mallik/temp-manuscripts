@@ -54,6 +54,15 @@ out/
 !journals/**/supplementary/**/*.pdf
 
 # ---------------------------------------------------------------
+# Overleaf sync
+# ---------------------------------------------------------------
+# Session cookie - can log in to your Overleaf account. NEVER commit.
+.olauth
+# Local copies of the shared bibliography made for Overleaf/Tectonic
+# (shared/references/references.bib is the source of truth)
+journals/*/references.bib
+
+# ---------------------------------------------------------------
 # Python / notebooks (shared/evaluation)
 # ---------------------------------------------------------------
 __pycache__/

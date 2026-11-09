@@ -9,6 +9,7 @@
 | Submission portal | |
 | Status | Drafting |
 | Manuscript ID | |
+| Overleaf project | |
 
 ## Submission log
 
@@ -19,6 +20,6 @@
 ## Build
 
 ```bash
-latexmk          # builds main.pdf
-latexmk -c       # clean auxiliary files
+tectonic main.tex   # or: latexmk  (latexmk -c to clean)
+ols                 # two-way sync with the Overleaf project of the same name
 ```

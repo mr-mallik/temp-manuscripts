@@ -1,0 +1,17 @@
+# Files overleaf-sync (ols) should NOT upload/download.
+# fnmatch patterns (not .gitignore syntax) - use folder/* for folders.
+.olignore
+.olauth
+README.md
+latexmkrc
+build/*
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.toc
+*.pdf

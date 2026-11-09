@@ -47,6 +47,10 @@
 \input{sections/conclusion}
 
 \bibliographystyle{unsrtnat}
-\bibliography{../../shared/references/references}
+% Uses a local references.bib if present (needed for Overleaf/Tectonic),
+% otherwise falls back to the shared bibliography.
+\IfFileExists{references.bib}%
+  {\bibliography{references}}%
+  {\bibliography{../../shared/references/references}}
 
 \end{document}
