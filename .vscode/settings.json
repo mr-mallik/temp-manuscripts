@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.jj": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/d:\\manuscripts\\journals\\_template\\main.aux": true,
+    "**/d:\\manuscripts\\journals\\_template\\main.log": true,
+    "**/d:\\manuscripts\\journals\\_template\\main.gz": true,
+    "**/d:\\manuscripts\\journals\\_template\\main.out": true
+  }
+}
